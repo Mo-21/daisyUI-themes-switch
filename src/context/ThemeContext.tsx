@@ -13,7 +13,6 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     if (typeof window !== "undefined") {
       const storedTheme = localStorage.getItem("theme");
       if (storedTheme) setTheme(storedTheme);
-      console.log(storedTheme);
     }
   }, []);
 
